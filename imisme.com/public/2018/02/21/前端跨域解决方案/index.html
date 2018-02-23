@@ -97,7 +97,7 @@
 <meta property="og:site_name" content="ISME">
 <meta property="og:description" content="这篇文章很搞笑，也有故事。最近入职了新公司，上班一个月了帮大家解决了一些问题也记录一下。在之前公司后端 GG 和前端联调接口都是各玩各的毕竟是 single page 页面大行其道的时代，谁知道新公司的前端技术还停留在 WEB 1.0 Jquery 时代。这不是关键，关键是跨域的解决方法让我不禁大吃一惊，第一反应：“ 卧槽，还能这样玩啊，不累么？” 解决方式：后端电脑开启共享目录（JAVA WEB">
 <meta property="og:image" content="http://www.imisme.com/img/ismewxpay.jpeg">
-<meta property="og:updated_time" content="2018-02-21T08:45:52.357Z">
+<meta property="og:updated_time" content="2018-02-23T08:13:06.935Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="前端跨域解决方案">
 <meta name="twitter:description" content="这篇文章很搞笑，也有故事。最近入职了新公司，上班一个月了帮大家解决了一些问题也记录一下。在之前公司后端 GG 和前端联调接口都是各玩各的毕竟是 single page 页面大行其道的时代，谁知道新公司的前端技术还停留在 WEB 1.0 Jquery 时代。这不是关键，关键是跨域的解决方法让我不禁大吃一惊，第一反应：“ 卧槽，还能这样玩啊，不累么？” 解决方式：后端电脑开启共享目录（JAVA WEB">
@@ -321,9 +321,9 @@
         <h5 id="这篇文章很搞笑，也有故事。"><a href="#这篇文章很搞笑，也有故事。" class="headerlink" title="这篇文章很搞笑，也有故事。"></a>这篇文章很搞笑，也有故事。</h5><p>最近入职了新公司，上班一个月了帮大家解决了一些问题也记录一下。在之前公司后端 GG 和前端联调接口都是各玩各的毕竟是 single page 页面大行其道的时代，谁知道新公司的前端技术还停留在 WEB 1.0 Jquery 时代。这不是关键，关键是跨域的解决方法让我不禁大吃一惊，第一反应：“ 卧槽，还能这样玩啊，不累么？”</p>
 <p>解决方式：后端电脑开启共享目录（JAVA WEB 项目的 webapp 目录），前端写好代码丢到共享目录里面，后端需要保证电脑的TOMCAT 在前端使用的时候必须开启状态……</p>
 <p>吐槽归吐槽，吐槽完了要解决问题啊 ！实在看不下去的我决定告诉他们一种 “新”方式，使用 NGINX 的反向代理功能解决跨域问题。首先讲一下跨域的两种解决办法：</p>
-<p>一. JAVA 后端解决，这需要在JAVA项目里给所有的请求加上请求头<br> “Access-Control-Allow-Origin  *”   表示允许跨域 demo 地址见 www.github.com<br>这种方案呢对代码有侵入性，并且会给项目带来一定的安全方面问题。</p>
+<p>一. JAVA 后端解决，这需要在JAVA项目里给所有的请求加上请求头<br> “Access-Control-Allow-Origin  *”   表示允许跨域 demo 地址见 <a href="https://github.com/alertisme/nginx-cros-demo" target="_blank" rel="external">我的 github</a><br>这种方案呢对代码有侵入性，并且会给项目带来一定的安全方面问题。</p>
 <p>二. 使用 NGINX 反向代理</p>
-<p>推荐第二种方式，这种方式对代码没有任何侵入性，简单方便唯一麻烦的是配置 NGINX 配置文件，不过不用担心，我都准备好了教程和 demo 在 www.github.com</p>
+<p>推荐第二种方式，这种方式对代码没有任何侵入性，简单方便唯一麻烦的是配置 NGINX 配置文件，不过不用担心，我都准备好了教程和 demo 在<a href="https://github.com/alertisme/nginx-cros-demo" target="_blank" rel="external">我的 github</a></p>
 <p>程序员最喜欢的解决方式就是: “NO CODE NO BB, SHOW ME THE CODE!”</p>
 <p>如果觉得不错给并你提供了帮助，可以打赏一杯咖啡提高作者的写作积极性，赠人玫瑰手有余香。</p>
 <p><img src="/img/ismewxpay.jpeg" alt="wxpay" title="wxpay"></p>
